@@ -12,3 +12,6 @@
  /* == Add your own styles below this line ==
 --------------------------------------------*/
 
+.work_menu ul li{
+	display:inline-block;
+}
