@@ -10,7 +10,11 @@
 
 			<!-- article -->
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<?php wp_nav_menu( array( 'theme_location' => 'works_menu' ) ); ?>
+				<div class="work_menu">
+				<?php 
+					wp_nav_menu( array( 'theme_location' => 'work_menu'
+				) ); ?>
+				</div>
 
 				<?php the_content(); ?>
 

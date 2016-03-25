@@ -12,7 +12,7 @@ Author URI: http://lindsaypeter.dev
 // register new custom menu
 function register_lpeters_menu() {
 	register_nav_menus( array(
-	'works_menu' => 'My Works Menu'
+	'work_menu' => 'My Work Menu'
 ) );
 }
 add_action('init', 'register_lpeters_menu');
