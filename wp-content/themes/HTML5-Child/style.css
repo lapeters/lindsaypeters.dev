@@ -12,6 +12,15 @@
  /* == Add your own styles below this line ==
 --------------------------------------------*/
 
-.work_menu ul li{
-	display:inline-block;
+.menu-item-type-custom {
+	position: relative;
+	display: inline-block;
+}
+.sub-menu {
+	display: none;
+	position: absolute;
+
+}
+.menu-item-type-custom:hover .sub-menu{
+	display: block;
 }
