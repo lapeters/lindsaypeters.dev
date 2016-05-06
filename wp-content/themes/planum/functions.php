@@ -77,7 +77,7 @@ function planum_setup() {
 	/**
 	 * Enable support for Post Formats
 	 */
-	//add_theme_support( 'post-formats', array( 'image', 'video', 'audio', 'quote', 'link', 'aside', 'status', 'gallery' ) );
+	add_theme_support( 'post-formats', array( 'image', 'video', 'audio', 'quote', 'link', 'aside', 'status', 'gallery' ) );
 
 	/**
 	 * Setup the WordPress core custom header image.
@@ -244,6 +244,9 @@ function planum_scripts() {
 	wp_enqueue_style( 'planum-font-awesome', get_template_directory_uri() . '/font-awesome/css/font-awesome.min.css?v=4.2' );//Awesome inc
 	
                 wp_enqueue_style( 'planum-style', get_stylesheet_uri() );
+
+    wp_register_style('bootstrapcss', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '1.0', 'all');
+    wp_enqueue_style('bootstrapcss'); //Enqueue it!
 
 	wp_enqueue_script( 'planum-flexslider', get_template_directory_uri() . '/js/jquery.flexslider.min.js', array( 'jquery' ), '23062015', true );
 
