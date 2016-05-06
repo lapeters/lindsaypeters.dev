@@ -15,14 +15,20 @@
  
 /* =Theme customization starts here
 ------------------------------------------------------- */
+body * {
+	color:#000;
+}
 a, .entry-title, .entry-summary {
 	color: #9099a2 !important;
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
-.site-title, .site-description, .site-footer {
+.site-title, .site-description, .site-footer, h3{
 	color:#000 !important;
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 p{
 	color:#000 !important;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .home-sticky > .entry-header > .entry-title {
 	color:#FFF !important;
