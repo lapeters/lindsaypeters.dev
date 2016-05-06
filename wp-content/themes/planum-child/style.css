@@ -15,13 +15,15 @@
  
 /* =Theme customization starts here
 ------------------------------------------------------- */
-h2, a {
-	color:#9099a2 !important;
+a, .entry-title, .entry-summary {
+	color: #9099a2 !important;
 }
-.entry-title {
-	color:#FFF;
-}
-
 .site-footer{
 	color:#000 !important;
+}
+.site-title, .site-description {
+	color:#000 !important;
+}
+.home-sticky > .entry-header > .entry-title {
+	color:#FFF !important;
 }
