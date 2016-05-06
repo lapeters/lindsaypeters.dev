@@ -18,10 +18,10 @@
 a, .entry-title, .entry-summary {
 	color: #9099a2 !important;
 }
-.site-footer{
+.site-title, .site-description, .site-footer {
 	color:#000 !important;
 }
-.site-title, .site-description {
+p{
 	color:#000 !important;
 }
 .home-sticky > .entry-header > .entry-title {

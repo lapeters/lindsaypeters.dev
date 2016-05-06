@@ -23,6 +23,11 @@ get_header(); ?>
 					
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 						<div class="entry-content">
+							
+						<span><?php echo types_render_field("location", array("argument1"=>"value1","argument2"=>"value2","argument2"=>"value2"));?></span>
+						<span><?php echo types_render_field("date", array("argument1"=>"value1","argument2"=>"value2","argument2"=>"value2")); ?></span>
+						<span><? echo types_render_field("equipment", array("argument1"=>"value1","argument2"=>"value2","argument2"=>"value2")); ?></span>
+							
 							<?php the_content(); ?>
 							<?php
 							wp_link_pages( array(
