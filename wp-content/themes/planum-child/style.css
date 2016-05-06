@@ -33,6 +33,9 @@ p{
 .home-sticky > .entry-header > .entry-title {
 	color:#FFF !important;
 }
+.topexcerpt{
+	display:none !important;
+}
 .thumbnail {
     position:relative;
     overflow:hidden;
