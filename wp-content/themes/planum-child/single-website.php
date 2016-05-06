@@ -30,6 +30,11 @@ get_header(); ?>
 
 
 			<div class="entry-content">
+				<span><? echo types_render_field("company", array("argument1"=>"value1","argument2"=>"value2","argument2"=>"value2")); ?></span>
+				<span><? echo types_render_field("keyword", array("argument1"=>"value1","argument2"=>"value2","argument2"=>"value2")); ?></span>
+				<span><? echo types_render_field("launchdate", array("argument1"=>"value1","argument2"=>"value2","argument2"=>"value2")); ?></span>
+				<span><? echo types_render_field("palatte", array("argument1"=>"value1","argument2"=>"value2","argument2"=>"value2")); ?></span>
+				<span><? echo types_render_field("site", array("argument1"=>"value1","argument2"=>"value2","argument2"=>"value2")); ?></span>
 			<?php the_content(); ?>
 			<?php
 			wp_link_pages( array(
