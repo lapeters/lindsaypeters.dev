@@ -32,6 +32,8 @@ get_header(); ?>
 				$loop = new WP_Query( $args );
 				while ( $loop->have_posts() ) : $loop->the_post();?>
   						<div class="col-md-3">
+  							<a href="<?php the_permalink(); ?>">
+  							<?php the_post_thumbnail('full', array('class' => ' img-responsive center-block')); ?> </a>
  							<h6><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h6>
  						</div><!-- .col-md-3 -->
 
