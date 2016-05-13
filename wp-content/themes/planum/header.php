@@ -77,6 +77,6 @@
 
 	<div id="main" class="site-main clearfix">
 
-<div class="backstretch" style="background: <?php echo esc_attr( get_theme_mod( 'planum_main_color', '#2e3138' ) ); ?> url(<?php $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id(), 'planum-featured' );  if( !empty($thumbnail) && !is_home() && !is_archive() && !is_search() ) { echo $thumbnail[0]; }else{ $home_image = get_header_image(); echo esc_url( $home_image ); }?>) no-repeat; background-size: cover; background-position:50%;">
+<div class="backstretch" style="background: <?php echo esc_attr( get_theme_mod( 'planum_main_color', '#2e3138' ) ); ?>" >
 <div class="trans" style="width: 100%; height: 100%;background: <?php echo esc_attr( get_theme_mod( 'planum_main_color', '#2e3138' ) ); ?>;">&nbsp;</div>
 </div><!--.backstretch-->
