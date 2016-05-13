@@ -27,21 +27,22 @@ get_header(); ?>
 					</header><!-- .entry-header -->
 
 				<div class="entry-content">
-				<?php $args = array( 'post_type' => 'website', 'posts_per_page' => 5 );
+					<div class="row">
+				<?php $args = array( 'post_type' => 'data', 'posts_per_page' => 5 );
 				$loop = new WP_Query( $args );
 				while ( $loop->have_posts() ) : $loop->the_post();?>
-  					
-  					<div class="entry-content">
- 					<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-  					</div>
-				<?php endwhile; ?>
+  						<div class="col-md-3">
+ 							<h6><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h6>
+ 						</div><!-- .col-md-3 -->
 
+				<?php endwhile; ?>
 				<?php
 					wp_link_pages( array(
 					'before' => '<div class="page-links">' . __( 'Pages:', 'planum' ),
 					'after'  => '</div>',
 					) );
 					?>
+				</div><!-- . row -->
 				</div><!-- .entry-content -->
 			</article><!-- #post-<?php the_ID(); ?> -->
 
