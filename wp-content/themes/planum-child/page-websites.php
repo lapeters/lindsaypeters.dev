@@ -34,7 +34,7 @@ get_header(); ?>
   						<div class="col-md-3">
   							<a href="<?php the_permalink(); ?>">
   							<?php the_post_thumbnail('full', array('class' => ' img-responsive center-block')); ?> </a>
- 							<h6><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h6>
+ 							<h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
  						</div><!-- .col-md-3 -->
 
 				<?php endwhile; ?>
