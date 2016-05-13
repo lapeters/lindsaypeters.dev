@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Photography
+ * Template Name: Website
  *
  * @package Planum
  */
@@ -35,6 +35,7 @@ get_header(); ?>
  					<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
   					</div>
 				<?php endwhile; ?>
+				
 
 				<?php
 					wp_link_pages( array(

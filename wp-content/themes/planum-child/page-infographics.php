@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Photography
+ * Template Name: Data
  *
  * @package Planum
  */

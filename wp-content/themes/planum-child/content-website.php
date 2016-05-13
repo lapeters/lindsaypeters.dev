@@ -21,12 +21,14 @@
     				the_post_thumbnail('full', array('class' => ' img-responsive center-block'));
 				} 
 				?>
+				<hr>
+				<p class="text-center"><a href="<?php echo types_render_field("live", array("target"=>"_blank","output"=>"raw","argument2"=>"value2")); ?>" class="btn btn-default btn-lg" role="button">Live Site</a></button></p>
+				<hr>
 
 
 			</div>
 			<div class="col-md-6">
 				<p class="text-left"><?php the_content(); ?></p>
-				<p class="text-center"><a href="<?php echo types_render_field("live", array("target"=>"_blank","output"=>"raw","argument2"=>"value2")); ?>" class="btn btn-default" role="button">Live Site</a></button></p>
 			
 			</div>
 
